@@ -7,7 +7,11 @@ require('telescope').setup({
                 { "harpoon.anchor (<leader>ha)", ":lua require('harpoon.mark').add_file()" },
                 { "harpoon (<leader>hh)", ":lua require('harpoon.ui').toggle_quick_menu()" },
             },
-       }
+            {"debug",
+                { "project-level diagnostics", ":lua vim.diagnostic.setqflist()" },
+            },
+
+        }
     }
 })
 
