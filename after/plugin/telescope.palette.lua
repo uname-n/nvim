@@ -1,6 +1,11 @@
 require('telescope').setup({
     extensions = {
         command_palette = {
+            {"copilot",
+                {"disable", ":Copilot disable"},
+                {"enable", ":Copilot enable"},
+                {"open panel", ":Copilot panel"},
+            },
             {"navigation",
                 { "find files (<leader>pp)", ":lua require('telescope.builtin').find_files()" },
                 { "dir (<leader>pd)", ":lua vim.cmd.Ex()" },
